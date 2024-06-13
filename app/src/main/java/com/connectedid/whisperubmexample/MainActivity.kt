@@ -60,7 +60,7 @@ import kotlinx.coroutines.launch
 class MainActivity : ComponentActivity() {
 
     var whisperUBM: WhisperUBM? = null
-    private val _uiState = MutableStateFlow(listOf<String>("test1","test2","test3","test4","test1","test2","test3","test4","test1","test2","test3","test4","test1","test2","test3","test4","test1","test2","test3","test4","test1","test2","test3","test4","test1","test2","test3","test4","test1","test2","test3","test4","test1","test2","test3","test4","test1","test2","test3","test4"))
+    private val _uiState = MutableStateFlow(listOf<String>())
     val uiState: StateFlow<List<String>> = _uiState.asStateFlow()
     val context = this
     private val _permission = MutableStateFlow(false)
