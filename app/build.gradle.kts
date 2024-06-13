@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "com.connectedid.whisperubmexample"
+    namespace = "com.whisper.whisperubmexample"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.connectedid.whisperubmexample"
+        applicationId = "com.whisper.whisperubmexample"
         minSdk = 26
         targetSdk = 34
         versionCode = 1
