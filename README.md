@@ -4,7 +4,7 @@ To add whisper ubm to your android studio project
 
 1.create libs folder if you dont already have one myproject/app/libs
 
-2.add WhisperUBM.arr to libs
+2.add WhisperUBM.arr to libs (you can find this at /WhisperSDK_DemoApp/app/libs)
 
 3.add WhisperUBM and dependencies to gradel
 
