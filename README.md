@@ -21,6 +21,6 @@ To add whisper ubm to your android studio project
         }
     }
 
-4. Add RECORD_AUDIO permission to manifest and add a feature to request permissison from the user in app
+4. Add RECORD_AUDIO permission to manifest and add a feature to request permission from the user in app
 
 5. Add the code "import com.whisper.whisperubmandroid.WhisperUBM" to the activity where you wish to implement whisper
