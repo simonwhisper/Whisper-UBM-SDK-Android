@@ -234,9 +234,9 @@ fun OnOff(listening: Boolean?, startButton: () -> Unit, modifier: Modifier){
         ) {
             Text(
                 if(listening == true){
-                    "ON"
+                    "Listening, Tap to switch off."
                 }else{
-                    "OFF"
+                    "Not Listening, Tap to switch on."
                 },
                 modifier = Modifier.align(Alignment.Center)
             )
