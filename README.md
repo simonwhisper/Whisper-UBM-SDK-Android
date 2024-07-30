@@ -9,17 +9,6 @@ To add whisper ubm to your android studio project
 3. add WhisperUBM and dependencies to gradle
 
  	implementation(files("libs/WhisperUBM.aar"))
-    implementation("com.google.android.gms:play-services-ads-identifier:18.1.0")
-    implementation("com.azure:azure-messaging-eventhubs:5.18.0")
-    implementation("com.azure:azure-identity:1.11.2")
-
-4. Also add the following inside the android{} section of your gradle file
-
-	packaging {
-        resources {
-            excludes += "/META-INF/{AL2.0,LGPL2.1,INDEX.LIST,io.netty.versions.properties}"
-        }
-    }
 
 4. Add RECORD_AUDIO permission to manifest and add a feature to request permission from the user in app
 
