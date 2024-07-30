@@ -67,8 +67,6 @@ dependencies {
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
 
-    implementation(files("libs/WhisperUBM.aar"))
-    implementation("com.google.android.gms:play-services-ads-identifier:18.1.0")
-    implementation("com.azure:azure-messaging-eventhubs:5.18.0")
-    implementation("com.azure:azure-identity:1.11.2")
+    implementation(files("libs/WhisperUBMAndroid-release.aar"))
+
 }

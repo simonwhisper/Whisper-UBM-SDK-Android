@@ -48,6 +48,7 @@ import androidx.compose.ui.platform.LocalConfiguration
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.unit.dp
 import androidx.core.view.WindowCompat
+import androidx.lifecycle.Lifecycle
 import com.whisper.whisperubmexample.ui.theme.WhisperUBMExampleTheme
 import com.whisper.whisperubmandroid.WhisperUBM
 import kotlinx.coroutines.flow.MutableStateFlow
@@ -66,7 +67,6 @@ class MainActivity : ComponentActivity() {
     private val _permission = MutableStateFlow(false)
     val permissionState: StateFlow<Boolean> = _permission.asStateFlow()
 
-
     override fun onCreate(savedInstanceState: Bundle?) {
 
         val vib = if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
@@ -77,8 +77,6 @@ class MainActivity : ComponentActivity() {
             @Suppress("DEPRECATION")
             getSystemService(VIBRATOR_SERVICE) as Vibrator
         }
-
-
 
         super.onCreate(savedInstanceState)
         requestMicPermission()
